@@ -1,0 +1,13 @@
+.myButton {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 30%;
+  min-width: 141px;
+  height: 60px;
+  background: #0b111f;
+  border-radius: 14px;
+  border: 1px solid #33c9d3;
+}
