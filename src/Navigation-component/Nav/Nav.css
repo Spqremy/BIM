@@ -1,0 +1,51 @@
+.nav__Center-links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.nav__text {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__row {
+  list-style: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.active > .nav__row {
+  color: #33c9d3;
+  position: relative;
+}
+
+.point {
+  margin-top: 5px;
+  visibility: hidden;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.active > .point {
+  visibility: visible;
+  background-color: #33c9d3;
+}
