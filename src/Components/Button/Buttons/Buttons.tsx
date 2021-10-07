@@ -1,8 +1,8 @@
-import React from "react";
+import {FC} from "react";
 import Button from "../Button";
 import "./Buttons.css";
 
-const Buttons = () => {
+const Buttons:FC = () => {
   return (
     <div className="nav__Buttons-Right-inner">
       <Button name="LOG IN" color="#979c9c" backgroundColor="white" />

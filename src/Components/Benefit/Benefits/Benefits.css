@@ -1,0 +1,8 @@
+.test{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 387px;
+    width: 90%;
+    max-width: 1632px;
+}
