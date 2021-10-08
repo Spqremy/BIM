@@ -3,6 +3,7 @@ import "./Home.css";
 import Image1 from "../../assets/Images/Image1.png";
 import Image2 from "../../assets/Images/Image2.png";
 import Cristi from "../../assets/Images/Cristi.png";
+import Benefits from "../../Components/Benefit/Benefits/Benefits";
 import Benefit from "../../Components/Benefit/Benefit";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Video from "../../Components/Video/Video";
@@ -14,6 +15,7 @@ export interface Props {}
 const Home: React.FC<Props> = () => {
   return (
     <div>
+      <Benefits/>
       home
       <Video />
       <div className="testimonials">
