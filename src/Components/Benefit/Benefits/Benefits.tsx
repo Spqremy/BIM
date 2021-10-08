@@ -1,13 +1,15 @@
 import "./Benefits.css";
+import StoreBenefit from "../../../Store/StoreBenefit"
 import Benefit from "../Benefit";
-import Image1 from "../../../assets/Images/Image1.png";
 
 export interface Props {}
+
+  const {benefits} = StoreBenefit;
 
 const Benefits = () => {
   return (
     <div className="test">
-      
+      {benefits.map(benefit=>(<Benefit {...benefit}/>))}
     </div>
   );
 };
