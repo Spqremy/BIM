@@ -1,0 +1,17 @@
+.test1 {
+    position: relative;
+    width: 34%;
+    background: red;
+  }
+  
+  .Test {
+    position: absolute;
+    background: blue;
+    bottom: 0;
+    right: 0;
+  }
+
+  .video{
+    width: auto; 
+    height: auto;
+  }

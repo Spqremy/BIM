@@ -1,0 +1,24 @@
+.Section {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.outer__employee-section {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
