@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  height: 281.7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../assets/Images/Footer.png");
+}
+
+.footer__inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo-image {
+  mask: url("../assets/Images/logo.svg");
+  background-color: black;
+  width: 100px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_logos {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+

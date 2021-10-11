@@ -8,7 +8,7 @@ export interface Props {}
 
 const Benefits = () => {
   return (
-    <div className="test">
+    <div className="distance">
       {benefits.map(benefit=>(<Benefit {...benefit}/>))}
     </div>
   );
