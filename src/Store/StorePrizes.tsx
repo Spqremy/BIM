@@ -10,34 +10,34 @@ class PrizeStore {
   PRIZES = [
     {
       image: Locul1,
-      text: "1st Place",
+      text: "1nd Place",
       price: "1200€",
     },
     {
       image: Locul2,
-      text: "1st Place",
-      price: "1200€",
+      text: "2nd Place",
+      price: "900€",
     },
     {
       image: Locul3,
-      text: "1st Place",
-      price: "1200€",
+      text: "3rd Place",
+      price: "650€",
     },
     {
       image: Innovation,
-      text: "1st Place",
-      price: "1200€",
+      text: "Most Disruptive Technology Award",
+      price: "500€",
     },
 
     {
       image: Popularity,
-      text: "1st Place",
-      price: "1200€",
+      text: "ASSIST Innovation Lab",
+      price: "500€",
     },
     {
       image: Disruptive,
-      text: "1st Place",
-      price: "1200€",
+      text: "ASSIST Popularity Award",
+      price: "350€",
     },
   ];
   prizes: { image: string; text: string; price: string }[] = this.PRIZES;

@@ -1,15 +1,14 @@
 .price {
-  width: 100%;
+  width: 50%;
   height: 20%;
-  max-width: 500px;
-  max-height: 250px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
 }
 
 .price__image-outer {
-  width: 30%;
+  width: 70%;
   max-width: 500px;
   height: 100%;
   max-height: 100px;
@@ -17,9 +16,11 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
 }
 
 .price__image {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +35,10 @@
 }
 
 .price__text {
-  width: 70%;
+  width: 85%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -47,11 +47,11 @@
   color: #212127;
 }
 
-.price_value-outer {
+.price__value-outer {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 108px;
+  
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -60,8 +60,9 @@
 }
 
 .price__value {
+
   height: 100%;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: right;
   align-items: center;
