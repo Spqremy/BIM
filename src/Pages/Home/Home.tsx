@@ -4,57 +4,109 @@ import Benefits from "../../Components/Benefit/Benefits/Benefits";
 import Testimonials from "../../Components/Testimonial/Testimonials/Testimonials";
 // import Video from "../../Components/Video/Video";
 import Section from "../../Components/Section/Section";
-import Locul1 from "../../assets/Images/Locul1.svg"
+import Button from "../../Components/Button/Button";
+import Mouse from "../../assets/Images/Mouse.png";
+import YoutubeLogo from "../../assets/Images/YoutubeLogo.png";
+import Title1 from "../../assets/Images/Title1.png";
+import Line from "../../assets/Images/Line.png";
 import Modal from "react-modal";
-import { useState } from "react";
+import PrizesImage from "../../assets/Images/Prize.png";
 import Video from "../../Components/Video/Video";
 import Footer from "../../Footer/Footer";
-import Prize from "../../Components/Prize/Prize";
+import BackGroundFirst from "../../assets/Images/BackgroundFirst.png";
 import Prizes from "../../Components/Prize/Prizes/Prizes";
 Modal.setAppElement("#root");
 
 export interface Props {}
 
 const Home: React.FC<Props> = () => {
-  const [modalIsOpen, setmodelaIsOpen] = useState(false);
-
   return (
     <div>
-      home
-      <div className="Section">
-        <Section
-          title="WHY TO JOIN?"
-          subtitle="Benefits & Advantages"
-          description="While we can customize your plan to suit your needs, most clients schedule regular services:"
-          position={false}
+      <div>
+        <img
+          src={BackGroundFirst}
+          alt="Image not found"
+          className="backGroundFirstImage"
         />
+        <div className="container">
+          <p className="container__text">Inn v</p>
+            <p className="container__text">ation.</p>
+            <img
+              src={Line}
+              alt="Image not found"
+              className="container__line-image"
+            />
+          <div className="container__bottom">
+            <div className="container__button"></div>
+            <p className="container__description">
+              Create value by applying novel solutions to meaningful problems
+            </p>
+          </div>
+          <img src={Mouse} alt="Image not found" className="container__mouse" />
+        </div>
       </div>
-      <div className="Section">
-        <Benefits />
-      </div>
-      <div className="outer">
-        <div className="outer__employee-section">
+      <div className="SecondBackground">
+        <div className="SecondBackground__Section">
           <Section
-            title="Testimonials"
-            subtitle="What Participants Say"
+            title="WHY TO JOIN?"
+            subtitle="Benefits & Advantages"
+            description="While we can customize your plan to suit your needs, most clients schedule regular services:"
+            position={false}
+          />
+        </div>
+        <div className="SecondBackground__Section">
+          <Benefits />
+        </div>
+        <div className="SecondBackground__outer">
+          <div className="SecondBackground__employee-section">
+            <Section
+              title="Testimonials"
+              subtitle="What Participants Say"
+              description="These are things that participats whot have used our features and work says."
+              position={true}
+            />
+          </div>
+        </div>
+        <Testimonials />
+      </div>
+      <div className="prize-Section">
+        <div className="prize-Section__left">
+          <img src={PrizesImage} alt="Prizes" />
+        </div>
+        <div className="prize-Section__right">
+          <Section
+            title="PRIZES"
+            subtitle="What you can win?"
+            description="These are things that participants who have used our features and works says."
+            position={true}
+          />
+
+          <Prizes />
+        </div>
+      </div>
+      <div className="video-Section">
+        <div className="video-Section__left">
+          <Section
+            title="HOW TO JOIN"
+            subtitle="Easier than you think."
             description="These are things that participats whot have used our features and work says."
             position={true}
           />
+          <div className="video-Section__buttons">
+            <Button name="Apply Now" color="white" border="none" width="10%" />
+            <div className="video-Section__youtube">
+              <img
+                src={YoutubeLogo}
+                alt="No image found"
+                className="video-Section__image"
+              />
+              <p className="video-Sectiion__text">View more videos</p>
+            </div>
+          </div>
         </div>
+        <Video />
       </div>
-      <Testimonials />
-      {/* <div className="testimonials">
-        <Employee
-          name="Cristian Spoiala"
-          position="Chief Tehnical Officer"
-          image={Cristi}
-        />
-      </div> */}
-      <Video />
-      <Prizes/>
-
-      <Prize image={Locul1} text="ascaa" price="13214$"/>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
