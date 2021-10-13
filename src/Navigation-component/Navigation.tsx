@@ -13,7 +13,7 @@ export const Navigation: FC = () => {
           <svg className="nav__logo-image"></svg>
         </div>
         <Nav />
-        <div className="nav__Buttons-Right">
+        <div className="nav__buttons-right">
           <Buttons />
         </div>
       </div>

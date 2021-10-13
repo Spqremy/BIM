@@ -32,13 +32,7 @@
   align-items: center;
 }
 
-.nav__Center-links {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 .nav__pages {
   display: flex;
   justify-content: space-around;

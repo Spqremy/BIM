@@ -4,7 +4,7 @@ import "./Buttons.css";
 
 const Buttons:FC = () => {
   return (
-    <div className="nav__Buttons-Right-inner">
+    <div className="nav__buttons-right-inner">
       <Button name="LOG IN" color="#979c9c" backgroundColor="white" />
       <Button name="Apply Now" color="white" border="none" />
     </div>

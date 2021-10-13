@@ -9,6 +9,7 @@ import Mouse from "../../assets/Images/Mouse.png";
 import YoutubeLogo from "../../assets/Images/YoutubeLogo.png";
 import Title1 from "../../assets/Images/Title1.png";
 import Line from "../../assets/Images/Line.png";
+import VideoSection from "../../Components/Video/VideoSection/VideoSection"
 import Modal from "react-modal";
 import PrizesImage from "../../assets/Images/Prize.png";
 import Video from "../../Components/Video/Video";
@@ -26,7 +27,7 @@ const Home: React.FC<Props> = () => {
         <img
           src={BackGroundFirst}
           alt="Image not found"
-          className="backGroundFirstImage"
+          className="Backgroundfirstimage"
         />
         <div className="container">
           <p className="container__text">Inn v</p>
@@ -45,8 +46,8 @@ const Home: React.FC<Props> = () => {
           <img src={Mouse} alt="Image not found" className="container__mouse" />
         </div>
       </div>
-      <div className="SecondBackground">
-        <div className="SecondBackground__Section">
+      <div className="secondbackground">
+        <div className="secondbackground__Section">
           <Section
             title="WHY TO JOIN?"
             subtitle="Benefits & Advantages"
@@ -54,11 +55,11 @@ const Home: React.FC<Props> = () => {
             position={false}
           />
         </div>
-        <div className="SecondBackground__Section">
+        <div className="secondbackground__Section">
           <Benefits />
         </div>
-        <div className="SecondBackground__outer">
-          <div className="SecondBackground__employee-section">
+        <div className="secondbackground__outer">
+          <div className="secondbackground__employee-section">
             <Section
               title="Testimonials"
               subtitle="What Participants Say"
@@ -69,11 +70,11 @@ const Home: React.FC<Props> = () => {
         </div>
         <Testimonials />
       </div>
-      <div className="prize-Section">
-        <div className="prize-Section__left">
+      <div className="prize-section">
+        <div className="prize-section__left">
           <img src={PrizesImage} alt="Prizes" />
         </div>
-        <div className="prize-Section__right">
+        <div className="prize-section__right">
           <Section
             title="PRIZES"
             subtitle="What you can win?"
@@ -84,28 +85,7 @@ const Home: React.FC<Props> = () => {
           <Prizes />
         </div>
       </div>
-      <div className="video-Section">
-        <div className="video-Section__left">
-          <Section
-            title="HOW TO JOIN"
-            subtitle="Easier than you think."
-            description="These are things that participats whot have used our features and work says."
-            position={true}
-          />
-          <div className="video-Section__buttons">
-            <Button name="Apply Now" color="white" border="none" width="10%" />
-            <div className="video-Section__youtube">
-              <img
-                src={YoutubeLogo}
-                alt="No image found"
-                className="video-Section__image"
-              />
-              <p className="video-Sectiion__text">View more videos</p>
-            </div>
-          </div>
-        </div>
-        <Video />
-      </div>
+      <VideoSection/>
       <Footer />
     </div>
   );

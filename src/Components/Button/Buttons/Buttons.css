@@ -1,4 +1,4 @@
-.nav__Buttons-Right-inner {
+.nav__buttons-right-inner {
   width: 70%;
   height: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.nav__Buttons-Right {
+.nav__buttons-right {
   width: 30%;
   height: 100%;
   display: flex;

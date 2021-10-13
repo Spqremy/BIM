@@ -1,17 +1,58 @@
-.test1 {
-    position: relative;
-    width: 34%;
-    background: red;
-  }
-  
-  .Test {
-    position: absolute;
-    background: blue;
-    bottom: 0;
-    right: 0;
-  }
+.video{
+  width: 100%;
 
-  .video{
-    width: auto; 
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__button-position{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.video__modal-button{
+  color:red;
+  background-color: blue;
+}
+.react-player {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.video__player-nomodal{
+  width: 600px;
+  height: 400px;
+  background-color: red;
+  border-radius: 40px;
+}
+.video__modal-video {
+  border-radius: 14px;
+  background: white;
+  height: 800px;
+  width: 1600px;
+  margin: auto;
+  transform: translate(0%,10%);
+}
+
+.video__button-modal{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.video__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+
+.video__inner-modal{
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+}

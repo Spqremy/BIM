@@ -6,50 +6,50 @@ export interface Props {}
 
 const Nav: FC = () => {
   return (
-    <div className="nav__Center-links">
+    <div className="nav__center-links">
       <ul className="nav__pages">
-        <li className="navigationlist-item">
+        <li className="nav__navigationlist-item">
           <NavLink
             exact
             to="/"
-            activeClassName="navigationlink--active"
-            className="navigationlink"
+            activeClassName="nav__navigationlink--active"
+            className="nav__navigationlink"
           >
             Home
-            <span className="navigationdot"></span>
+            <span className="nav__navigationdot"></span>
           </NavLink>
         </li>
-        <li className="navigationlist-item">
+        <li className="nav__navigationlist-item">
           <NavLink
             exact
             to="/Bim"
-            activeClassName="navigationlink--active"
-            className="navigationlink"
+            activeClassName="nav__navigationlink--active"
+            className="nav__navigationlink"
           >
             BIM2021
-            <span className="navigationdot"></span>
+            <span className="nav__navigationdot"></span>
           </NavLink>
         </li>
-        <li className="navigationlist-item">
+        <li className="nav__navigationlist-item">
           <NavLink
             exact
             to="/Regulations"
-            activeClassName="navigationlink--active"
-            className="navigationlink"
+            activeClassName="nav__navigationlink--active"
+            className="nav__navigationlink"
           >
             Regulations
-            <span className="navigationdot"></span>
+            <span className="nav__navigationdot"></span>
           </NavLink>
         </li>
-        <li className="navigationlist-item">
+        <li className="nav__navigationlist-item">
           <NavLink
             exact
             to="/History"
-            activeClassName="navigationlink--active"
-            className="navigationlink"
+            activeClassName="nav__navigationlink--active"
+            className="nav__navigationlink"
           >
             History
-            <span className="navigationdot"></span>
+            <span className="nav__navigationdot"></span>
           </NavLink>
         </li>
       </ul>
