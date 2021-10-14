@@ -4,18 +4,15 @@ import Benefits from "../../Components/Benefit/Benefits/Benefits";
 import Testimonials from "../../Components/Testimonial/Testimonials/Testimonials";
 // import Video from "../../Components/Video/Video";
 import Section from "../../Components/Section/Section";
-import Button from "../../Components/Button/Button";
 import Mouse from "../../assets/Images/Mouse.png";
-import YoutubeLogo from "../../assets/Images/YoutubeLogo.png";
-import Title1 from "../../assets/Images/Title1.png";
 import Line from "../../assets/Images/Line.png";
 import VideoSection from "../../Components/Video/VideoSection/VideoSection"
 import Modal from "react-modal";
 import PrizesImage from "../../assets/Images/Prize.png";
-import Video from "../../Components/Video/Video";
 import Footer from "../../Footer/Footer";
 import BackGroundFirst from "../../assets/Images/BackgroundFirst.png";
 import Prizes from "../../Components/Prize/Prizes/Prizes";
+import { Navigation } from "../../Navigation-component/Navigation";
 Modal.setAppElement("#root");
 
 export interface Props {}
@@ -23,6 +20,7 @@ export interface Props {}
 const Home: React.FC<Props> = () => {
   return (
     <div>
+      <Navigation />
       <div>
         <img
           src={BackGroundFirst}

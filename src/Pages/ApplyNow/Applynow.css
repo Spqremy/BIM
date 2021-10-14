@@ -1,0 +1,64 @@
+.applynow {
+  background-image: url("../../assets/Images/BackgroundFirst.png");
+  width: 100%;
+  height: 100vh;
+
+}
+
+.applynow__logo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.applynow__logo-image {
+  mask: url("../../assets/Images/Logo-login.png");
+  background-color: black;
+  width: 241px;
+  height:  158px;
+  margin: auto;
+}
+
+.applynow__buttons-container {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.applynow__buttons{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.applynow__login-button {
+  width: 345px;
+  height: 61px;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.15) 23.96%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #33c9d3;
+  border:none;
+  border-radius: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: white;
+}
+
+.applynow__buttonlogin{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
