@@ -2,6 +2,7 @@ import React from "react";
 import "./Button.css";
 
 export interface Props {
+  marginLeft?:string;
   name?: string;
   backgroundColor?: string;
   color?: string;
@@ -10,12 +11,12 @@ export interface Props {
   border?:string;
 }
 
-export const Button: React.FC<Props> = ({ name, backgroundColor, onClick,color,border,width }) => {
+export const Button: React.FC<Props> = ({ name, backgroundColor, onClick,color,border,width,marginLeft }) => {
   return (
     <>
       <button
         className="myButton"
-        style={{ background: backgroundColor ,color:color,border:border,width:width}}
+        style={{ background: backgroundColor ,color:color,border:border,width:width,marginLeft:marginLeft}}
         onClick={onClick}
       >
         {name}
