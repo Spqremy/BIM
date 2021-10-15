@@ -1,0 +1,31 @@
+.c-tabs__tab {
+  display: none;
+}
+.c-tabs__btn {
+  background-color: hotpink;
+}
+.c-tabs__btn--active {
+  background-color: red;
+}
+.c-tabs__tab--active {
+  display: block;
+}
+
+.c-tabs {
+  width: 100%;
+}
+
+.c-tabs__list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.c-tabs__item {
+  display: flex;
+  width: 15%;
+  height: 100%;
+  justify-content: space-between;
+}
