@@ -8,8 +8,7 @@ import ApplyNow from "./Pages/ApplyNow/Applynow";
 
 function App() {
   return (
-    <Router>
-      
+    <Router> 
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/Bim" component={Bim}></Route>

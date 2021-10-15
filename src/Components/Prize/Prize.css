@@ -1,10 +1,10 @@
 .price {
-  width: 50%;
+  width: 80%;
   height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  max-width: 480px;
 }
 
 .price__image-outer {

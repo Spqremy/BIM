@@ -1,0 +1,6 @@
+.cards{
+    margin: 20px 0px;
+    width: 61%;
+    display: flex;
+    justify-content: space-evenly;
+}
