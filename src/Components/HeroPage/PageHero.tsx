@@ -7,11 +7,20 @@ import Tabs from "./Tabs/Tabs";
 export interface Props {
   title?: string;
   date?: string;
-  description?:string;
-  entries?:string;
+  description?: string;
+  entries?: string;
+  onChange?: () => number;
+  activeTabIndex?: number;
 }
 
-const PageHero: React.FC<Props> = ({ title, date,entries,description }) => {
+const PageHero: React.FC<Props> = ({
+  title,
+  date,
+  entries,
+  description,
+  onChange,
+  activeTabIndex,
+}) => {
   return (
     <div>
       <div className="pagehero">
@@ -23,7 +32,12 @@ const PageHero: React.FC<Props> = ({ title, date,entries,description }) => {
             </div>
           </div>
           <div className="pagehero__container-links">
-          {/* <Tabs firstTabContent="ccc" secondTabContent="aaa"/> */}
+            {/* <Tabs
+              firstTabContent="ccc"
+              secondTabContent="aaa"
+              onChange={onChange}
+              activeTabIndex={activeTabIndex}
+            /> */}
             <ul className="pagehero__links">
               <li className="pagehero__navigationlist-item">
                 <NavLink

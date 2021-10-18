@@ -5,21 +5,24 @@ import "./Tabs.css";
 interface Props {
   firstTabContent?: React.ReactNode;
   secondTabContent?: React.ReactNode;
+  onChange?: () => number;
+  activeTabIndex?: number;
 }
 
-const Tabs = ({ firstTabContent, secondTabContent }: Props) => {
-  const [activeTabIndex, setActiveTabIndex] = useState<number>(1);
-
-  function handleTabClick(tabIndex: number) {
-    setActiveTabIndex(tabIndex);
-  }
+const Tabs = ({
+  firstTabContent,
+  secondTabContent,
+  onChange,
+  activeTabIndex,
+}: Props) => {
+  // const [activeTabIndex, setActiveTabIndex] = useState<number>(1);
 
   return (
     <div className="c-tabs">
       <ul className="c-tabs__list">
         <li className="c-tabs__item">
           <button
-            onClick={() => handleTabClick(1)}
+            onClick={onChange}
             className={
               activeTabIndex === 1 ? "c-tabs__btn" : "c-tabs__btn--active"
             }
@@ -30,7 +33,7 @@ const Tabs = ({ firstTabContent, secondTabContent }: Props) => {
 
         <li>
           <button
-            onClick={() => handleTabClick(2)}
+            onClick={onChange}
             className={
               activeTabIndex === 2 ? "c-tabs__btn" : "c-tabs__btn--active"
             }
