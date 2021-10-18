@@ -1,6 +1,34 @@
-.cards{
-    margin: 20px 0px;
-    width: 61%;
-    display: flex;
-    justify-content: space-evenly;
+.cards {
+  margin: 20px 0px;
+  width: 61%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.employee-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  column-gap: 5%;
+
+}
+
+.employee__title {
+  width: 95%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  color: #152c5b;
+}
+
+.footer{
+    margin-top: 5%;
 }

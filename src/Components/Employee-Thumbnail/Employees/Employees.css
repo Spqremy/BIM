@@ -1,0 +1,8 @@
+.employees {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
