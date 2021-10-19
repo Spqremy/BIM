@@ -19,7 +19,7 @@ const Video: React.FC<Props> = () => {
             onClick={() => setmodelaIsOpen(true)}
             className="video__modal-button"
           >
-            Modal
+            
           </button>
         </div>
         <ReactPlayer controls url={VideoMedia} muted={false} playing={false} />
@@ -36,7 +36,7 @@ const Video: React.FC<Props> = () => {
                   onClick={() => setmodelaIsOpen(false)}
                   className="video__button-modal"
                 >
-                  Close
+                  
                 </button>
               </div>
 
