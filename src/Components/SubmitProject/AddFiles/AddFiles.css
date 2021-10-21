@@ -1,0 +1,39 @@
+.addfile {
+  background: #ffffff;
+  border: 2px dashed #595959;
+  box-sizing: border-box;
+  border-radius: 24px;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addfile__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+  color: #212127;
+}
+
+.addfile__subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  color: #212127;
+}
+
+.addfile__description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #595959;
+}

@@ -3,13 +3,14 @@ import "./SubmitProject.css";
 import Labelinput from "./Labelinput/Labelinput";
 import Input from "./Input/Input";
 import { Button } from "../Button/Button";
+import AddFiles from "./AddFiles/AddFiles";
 
 export interface Props {}
 
 const SubmitProject: React.FC<Props> = ({}) => {
   return (
-    <>
-      <div className="submitproject">
+    <div className="submitproject">
+      <div className="submitproject__left">
         <h1 className="submitproject__title">Submit Project</h1>
         <div className="submitproject__inputs">
           <Labelinput
@@ -31,7 +32,7 @@ const SubmitProject: React.FC<Props> = ({}) => {
             name="textArea"
           ></textarea>
         </div>
-        <Input />
+        <Input placeHolder="Team Member Name"/>
         <Button
           backgroundColor="white"
           border="1px solid #595959"
@@ -49,10 +50,15 @@ const SubmitProject: React.FC<Props> = ({}) => {
           color="#FFFFFF"
         />
       </div>
-      <div>
-          
+      <div className="submitproject__right">
+        <AddFiles
+          description="Please ensure you have read the contest brief. You need to upload your project presentation and a project thumbnail.
+Supported files types are: PPT, MP4, JPG, PNG"
+          title="Add files"
+          subtitle="Drag your file or"
+        />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import PageHero from "../../Components/HeroPage/PageHero";
 import SubmitProject from "../../Components/SubmitProject/SubmitProject";
+import Vote from "../../Components/Vote/Vote";
 import Footer from "../../Footer/Footer";
 import { Navigation } from "../../Navigation-component/Navigation";
 import "./History.css";
