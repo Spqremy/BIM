@@ -10,7 +10,7 @@ const Regulations: React.FC<Props> = () => {
   return <div>
     <Navigation />
       <Success subtitle="You have successfully uploaded your project. Good luck and we hope that your idea will be chosen for the final." title="Success!"/>
-      
+     
       <Footer/>
   </div>;
 };

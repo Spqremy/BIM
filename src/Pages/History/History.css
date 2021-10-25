@@ -1,0 +1,49 @@
+.points {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.points__subtitles {
+  width: 100%;
+  max-width: 1620px;
+  display: flex;
+  justify-content: space-between;
+}
+.points__right {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.points__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #152c5b;
+  width: 87%;
+  text-align: left;
+}
+
+.points__subtitles {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 180%;
+  color: #2228b2;
+}
+
+.points__button{
+    margin-top: 50px;
+    width: 87%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
