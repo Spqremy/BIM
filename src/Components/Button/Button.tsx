@@ -13,7 +13,9 @@ export interface Props {
   fontSize?: string;
   lineHeight?: string;
   marginBottom?: string;
-  height?:string;
+  height?: string;
+  display?: string;
+  alignItems?: string;
 }
 
 export const Button: React.FC<Props> = ({
@@ -29,28 +31,30 @@ export const Button: React.FC<Props> = ({
   fontSize,
   lineHeight,
   marginBottom,
+  display,
+  alignItems,
 }) => {
   return (
-    <>
-      <button
-        className="myButton"
-        style={{
-          background: backgroundColor,
-          color: color,
-          border: border,
-          width: width,
-          marginLeft: marginLeft,
-          fontWeight: fontWeight,
-          fontSize: fontSize,
-          lineHeight: lineHeight,
-          marginBottom: marginBottom,
-          height: height,
-        }}
-        onClick={onClick}
-      >
-        {name}
-      </button>
-    </>
+    <button
+      className="myButton"
+      style={{
+        background: backgroundColor,
+        color: color,
+        border: border,
+        width: width,
+        marginLeft: marginLeft,
+        fontWeight: fontWeight,
+        fontSize: fontSize,
+        lineHeight: lineHeight,
+        marginBottom: marginBottom,
+        height: height,
+        alignItems: alignItems,
+        display: display,
+      }}
+      onClick={onClick}
+    >
+      {name}
+    </button>
   );
 };
 export default Button;

@@ -1,19 +1,49 @@
-.title {
+.vote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1620px;
+}
+
+.vote__down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 1620px;
+}
+
+.vote__title {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 180%;
+  margin-bottom: 5px;
+}
+
+.vote__right {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.vote__procents {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
   color: #212127;
 }
 
-.vote{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.vote__right{
-    display: flex;
-    align-items: center;
+.vote__line {
+  width: 1620px;
+  border: 1px solid #a7a7a7;
 }

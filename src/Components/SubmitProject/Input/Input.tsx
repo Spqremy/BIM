@@ -6,10 +6,11 @@ export interface Props {
   width?:string;
   height?:string;
   border?:string;
-  color?:string
+  color?:string;
+  points?:number;
 }
 
-const Input: React.FC<Props> = ({placeHolder,width,height,border,color}) => {
+const Input: React.FC<Props> = ({placeHolder,width,height,border,color,points}) => {
   return (
     <div className="sinput">
       <input
