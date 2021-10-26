@@ -1,14 +1,14 @@
 import { FC } from "react";
 import { NavLink } from "react-router-dom";
-import Button from "../Button";
+import Button from "../Button/Button";
 import "./Buttons.css";
 
 const Buttons: FC = () => {
   return (
-    <div className="nav__buttons-right-inner">
-      <Button name="LOG IN" color="#979c9c" backgroundColor="white" />
-      <NavLink to="Applynow">
-        <Button name="Apply Now" color="white" border="none" />
+    <div className="nav__buttons">
+      <Button name="LOG IN"  className="nav__button" />
+      <NavLink to="Applynow" className="nav__link">
+        <Button name="Apply Now"  className="nav__button-second"  />
       </NavLink>
     </div>
   );

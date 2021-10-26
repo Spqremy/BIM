@@ -20,7 +20,7 @@ const Testimonial: React.FC<Props> = ({
       <h4 className="testimonial__description">{description}</h4>
       <hr className="testimonial__line"></hr>
       <p className="testimonial__name">{name}</p>
-      <a className="testimonial__position">{position}</a>
+      <p className="testimonial__position">{position}</p>
     </div>
   );
 };

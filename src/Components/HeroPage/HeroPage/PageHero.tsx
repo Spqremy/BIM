@@ -1,8 +1,8 @@
 import React from "react";
 import "./PageHero.css";
-import Button from "../Button/Button";
+import Button from "../../Button/Button/Button";
 import { NavLink } from "react-router-dom";
-import Tabs from "./Tabs/Tabs";
+
 
 export interface Props {
   title?: string;
@@ -66,19 +66,12 @@ const PageHero: React.FC<Props> = ({
         </div>
         <div className="pagehero__buttons">
           <Button
+            className="pagehero__button"
             name="View Regulations"
-            backgroundColor="#152C5B"
-            border="1px solid white"
-            color="white"
-            width="32%"
           />
           <Button
+          className="pagehero__button-second"
             name="Apply now"
-            backgroundColor="#33C9D3"
-            border="none"
-            color="white"
-            width="15%"
-            marginLeft="5%"
           />
         </div>
       </div>

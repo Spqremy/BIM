@@ -15,7 +15,7 @@ const Prize: React.FC<Props> = ({ image, text, price }) => {
         <p className="price__text">{text}</p>
       </div>
       <div className="price__value-outer">
-        <a className="price__value">{price}</a>
+        <p className="price__value">{price}</p>
       </div>
     </div>
   );

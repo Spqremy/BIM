@@ -37,3 +37,16 @@
   line-height: 15px;
   color: #595959;
 }
+
+.addfile__button{
+  border:1px solid #6C6C6C;
+  background-color:white;
+  color:#878787;
+  height: 100%;
+  width: 100%;
+  max-width: 167px;
+  padding: 8px;
+  max-height: 60px;
+  border-radius: 14px;
+  box-sizing: border-box;
+}

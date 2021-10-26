@@ -1,7 +1,7 @@
 import React from "react";
 import Success from "../../Components/Success/Success";
 import Footer from "../../Footer/Footer";
-import { Navigation } from "../../Navigation-component/Navigation";
+import { Navigation } from "../../Navigation-component/Navigation/Navigation";
 import "./Regulations.css"
 
 export interface Props {}

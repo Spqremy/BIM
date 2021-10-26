@@ -1,6 +1,6 @@
 import "./Prizes.css";
 import StorePrizes from "../../../Store/StorePrizes";
-import Prize from "../Prize";
+import Prize from "../Prize/Prize";
 
 export interface Props {}
 

@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../../Components/Button/Button";
-import PageHero from "../../Components/HeroPage/PageHero";
-import SubmitProject from "../../Components/SubmitProject/SubmitProject";
+import Button from "../../Components/Button/Button/Button";
+import PageHero from "../../Components/HeroPage/HeroPage/PageHero";
+import SubmitProject from "../../Components/SubmitProject/SubmitProject/SubmitProject";
 import Votes from "../../Components/Vote/Votes/Votes";
 import Footer from "../../Footer/Footer";
-import { Navigation } from "../../Navigation-component/Navigation";
+import { Navigation } from "../../Navigation-component/Navigation/Navigation";
 import "./History.css";
 
 export interface Props {}
@@ -30,9 +30,10 @@ const History: React.FC<Props> = () => {
           </div>
         </div>
         <Votes />
-        <hr className="vote__line"></hr>
+        
         <div className="points__button">
-          <Button name="Submit Vote" color="white" border="none" width="10%" />
+        <hr className="points__line"></hr>
+          <Button name="Submit Vote" className="points__button-submit"/>
         </div>
       </div>
       <Footer />

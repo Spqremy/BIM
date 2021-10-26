@@ -19,9 +19,9 @@ const Benefit: React.FC<Props> = ({ title, description, image }) => {
       <img src={image} alt={title} className="card__image" />
       <h4 className="card__title">{title}</h4>
       <p className="card__description">{description}</p>
-      <a className="card__button" onClick={() => setmodelaIsOpen(true)}>
-        Learn more{" "}
-      </a>
+      <p className="card__button" onClick={() => setmodelaIsOpen(true)}>
+        Learn more
+      </p>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setmodelaIsOpen(false)}

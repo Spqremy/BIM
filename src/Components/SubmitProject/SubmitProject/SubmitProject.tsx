@@ -1,13 +1,13 @@
 import React from "react";
 import "./SubmitProject.css";
-import Labelinput from "./Labelinput/Labelinput";
-import Input from "./Input/Input";
-import { Button } from "../Button/Button";
-import AddFiles from "./AddFiles/AddFiles";
+import Labelinput from "../Labelinput/Labelinput";
+import Input from "../Input/Input";
+import { Button } from "../../Button/Button/Button";
+import AddFiles from "../AddFiles/AddFiles";
 
 export interface Props {}
 
-const SubmitProject: React.FC<Props> = ({}) => {
+const SubmitProject: React.FC<Props> = () => {
   return (
     <div className="submitproject">
       <div className="submitproject__left">
@@ -16,12 +16,12 @@ const SubmitProject: React.FC<Props> = ({}) => {
           <Labelinput
             name="Project Name*"
             Pholder="What is your project name?"
+            className="submitproject__label-input"
           />
           <Labelinput
             name="Team Name*"
             Pholder="What is your team name?"
-            marginLeft="5%"
-            marginLeftLabel="10%"
+            className="submitproject__label-input"
           />
         </div>
         <div className="submitproject__describe">
@@ -32,23 +32,15 @@ const SubmitProject: React.FC<Props> = ({}) => {
             name="textArea"
           ></textarea>
         </div>
-        <Input placeHolder="Team Member Name"/>
+        <Input
+          placeHolder="Team Member Name"
+          className="submitproject__input"
+        />
         <Button
-          backgroundColor="white"
-          border="1px solid #595959"
-          width="100%"
           name="Add a team member + "
-          color="#595959"
-          fontWeight={200}
-          height="52px"
-          marginBottom="25px"
+          className="submitproject__button-member"
         />
-        <Button
-          width="13%"
-          name="Submit Project"
-          border="none"
-          color="#FFFFFF"
-        />
+        <Button name="Submit Project" className="submitproject__button" />
       </div>
       <div className="submitproject__right">
         <AddFiles

@@ -3,12 +3,13 @@ import Modal from "react-modal";
 import { useState } from "react";
 import "./Video.css";
 import ReactPlayer from "react-player";
-import VideoMedia from "../../assets/Images/Video.mp4";
+import VideoMedia from "../../../assets/Images/Video.mp4";
 Modal.setAppElement("#root");
 
 export interface Props {}
 
 const Video: React.FC<Props> = () => {
+
   const [modalIsOpen, setmodelaIsOpen] = useState(false);
 
   return (

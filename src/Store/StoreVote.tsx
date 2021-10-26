@@ -1,6 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import { Component } from "react";
-import Input from "../Components/SubmitProject/Input/Input";
+
 
 //de intrebat despre componenta
 

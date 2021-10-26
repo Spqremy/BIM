@@ -1,6 +1,6 @@
 import "./Benefits.css";
 import StoreBenefit from "../../../Store/StoreBenefit"
-import Benefit from "../Benefit";
+import Benefit from "../Benefit/Benefit";
 
 export interface Props {}
 
@@ -8,7 +8,7 @@ export interface Props {}
 
 const Benefits = () => {
   return (
-    <div className="distance">
+    <div className="benefits">
       {benefits.map(benefit=>(<Benefit {...benefit}/>))}
     </div>
   );

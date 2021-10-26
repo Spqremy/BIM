@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../SubmitProject/Input/Input";
+import Input from "../../SubmitProject/Input/Input";
 import "./Vote.css";
 
 export interface Props {
@@ -14,7 +14,7 @@ const Vote: React.FC<Props> = ({ title, procents }) => {
       <div className="vote__down">
         <h3 className="vote__title">{title}</h3>
         <div className="vote__right">
-          <Input width="132px" height="32px" placeHolder="0-100 points" />
+          <Input className="vote__input" placeHolder="0-100 points" />
           <h3 className="vote__procents">{procents}</h3>
         </div>
       </div>

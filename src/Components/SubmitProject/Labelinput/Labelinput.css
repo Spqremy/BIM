@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: left;
-  align-items: start;
+  align-items: flex-start;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;

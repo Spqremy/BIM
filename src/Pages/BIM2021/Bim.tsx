@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Description from "../../Components/Description/Description";
 import Employees from "../../Components/Employee-Thumbnail/Employees/Employees";
-import PageHero from "../../Components/HeroPage/PageHero";
+import PageHero from "../../Components/HeroPage/HeroPage/PageHero";
 import StudentCard from "../../Components/StudentCard/StudentCard";
 import Footer from "../../Footer/Footer";
-import { Navigation } from "../../Navigation-component/Navigation";
+import { Navigation } from "../../Navigation-component/Navigation/Navigation";
 import "./Bim.css";
 
 export interface Props {}
 
 const Bim: React.FC<Props> = () => {
-  const [activeTabIndexX, setActiveTabIndexX] = useState<number>(1);
 
-  function handleTabClick(activeTabIndexX: number) {
-    setActiveTabIndexX(activeTabIndexX);
-  }
   return (
     <div>
       <Navigation />
@@ -28,17 +24,17 @@ const Bim: React.FC<Props> = () => {
       <Description />
       <div className="cards">
         <StudentCard
-          width="27%"
+          className="cards__card"
           place="1st place"
           prize="175E + Paid internship"
         />
         <StudentCard
-          width="27%"
+          className="cards__card"
           place="1st place"
           prize="175E + Paid internship"
         />
         <StudentCard
-          width="27%"
+          className="cards__card"
           place="1st place"
           prize="175E + Paid internship"
         />

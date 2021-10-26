@@ -1,9 +1,9 @@
 import { FC } from "react";
-import Buttons from "../Components/Button/Buttons/Buttons";
+import Buttons from "../../Components/Button/Buttons/Buttons";
 
 import "./Navigation.css";
 
-import Nav from "./Nav/Nav";
+import Nav from "../Nav/Nav";
 
 export const Navigation: FC = () => {
   return (
