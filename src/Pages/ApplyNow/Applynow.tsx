@@ -54,7 +54,6 @@ const ApplyNow: React.FC<Props> = () => {
           Login with your Office 365 Account
         </button>
       </div>
-     
     </div>
   );
 };

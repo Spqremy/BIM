@@ -44,6 +44,17 @@
 }
 
 .vote__line {
-  width: 1620px;
+  width: 100%;
+  max-width: 1620px;
   border: 1px solid #a7a7a7;
+}
+
+.vote__input {
+  padding: 8px;
+  max-height: 32px;
+  max-width: 132px;
+  border: 1px solid #606060;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
 }

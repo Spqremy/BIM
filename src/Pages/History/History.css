@@ -1,5 +1,6 @@
 .points {
   width: 100%;
+  max-width: 1620px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,14 +8,20 @@
 }
 
 .points__subtitles {
-  width: 100%;
+  width: 90%;
   max-width: 1620px;
   display: flex;
   justify-content: space-between;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 180%;
+  color: #2228b2;
 }
 .points__right {
   display: flex;
-  width: 35%;
+  width: 23%;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,23 +34,39 @@
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #152c5b;
-  width: 87%;
+  width: 90%;
   text-align: left;
 }
 
-.points__subtitles {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 180%;
-  color: #2228b2;
+
+.points__button {
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
 }
 
-.points__button{
-    margin-top: 50px;
-    width: 87%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+.points__line {
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  max-width: 1620px;
+  border: 1px solid #a7a7a7;
+}
+
+.points__button-submit {
+  height: 50%;
+  width: 90%;
+  max-width: 149px;
+  max-height: 60px;
+  margin-top: 50px;
+  background: #0b111f;
+  border-radius: 14px;
+  color:white;
+  padding: 18px 24px;
+  border:none;
 }

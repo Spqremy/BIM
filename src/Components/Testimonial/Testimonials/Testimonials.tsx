@@ -1,6 +1,6 @@
 import "./Testimonials.css";
 import StoreTestimonial from "../../../Store/StoreTestimonail"
-import Testimonial from "../Testimonial";
+import Testimonial from "../Testimonial/Testimonial";
 
 export interface Props {}
 
@@ -8,7 +8,7 @@ export interface Props {}
 
 const Testimonials = () => {
   return (
-    <div className="distance">
+    <div className="testimonialss">
       {testimonials.map(testimonial=>(<Testimonial {...testimonial}/>))}
     </div>
   );

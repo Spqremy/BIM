@@ -15,7 +15,7 @@ const LoginButton: React.FC<Props> = ({ name, checked, onClick }) => {
         className={!checked ? "loginbutton" : "loginbutton--modifier"}
         onClick={onClick}
       >
-        <img src={CheckCircle} className="loginbutton__check" />
+        <img src={CheckCircle} alt="not found" className="loginbutton__check" />
         <div className="loginbutton__name">
           {name}
         </div>

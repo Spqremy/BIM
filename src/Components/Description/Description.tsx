@@ -2,7 +2,7 @@ import Prizes from "../Prize/Prizes/Prizes";
 import "./Description.css";
 
 export interface Props {}
-const Description: React.FC<Props> = ({}) => {
+const Description: React.FC<Props> = () => {
   return (
     <div className="description">
       <div className="description__text">

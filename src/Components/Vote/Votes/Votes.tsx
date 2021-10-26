@@ -1,6 +1,6 @@
 import "./Votes.css";
 import StoreVote from "../../../Store/StoreVote";
-import Vote from "../Vote";
+import Vote from "../Vote/Vote";
 
 export interface Props {}
 

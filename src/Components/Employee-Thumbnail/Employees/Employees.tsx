@@ -1,6 +1,6 @@
 import "./Employees.css";
 import StoreEmployees from "../../../Store/StoreEmployees";
-import Employee from "../Employee";
+import Employee from "../Employee-Thumbnail/Employee";
 
 export interface Props {}
 

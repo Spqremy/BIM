@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../Button/Button";
+import Button from "../../Button/Button//Button";
 import "./AddFiles.css";
 
 export interface Props {
@@ -15,12 +15,7 @@ const AddFiles: React.FC<Props> = ({ title, subtitle, description }) => {
         <div className="addfile__inner">
           <h1 className="addfile__title">{title}</h1>
           <h3 className="addfile__subtitle">{subtitle}</h3>
-          <Button
-            name="Browse your files"
-            border="1px solid #6C6C6C"
-            backgroundColor="white"
-            color="#878787"
-          ></Button>
+          <Button className="addfile__button" name="Browse your files"></Button>
         </div>
       </div>
       <p className="addfile__description">{description}</p>

@@ -12,7 +12,7 @@ import PrizesImage from "../../assets/Images/Prize.png";
 import Footer from "../../Footer/Footer";
 import BackGroundFirst from "../../assets/Images/BackgroundFirst.png";
 import Prizes from "../../Components/Prize/Prizes/Prizes";
-import { Navigation } from "../../Navigation-component/Navigation";
+import { Navigation } from "../../Navigation-component/Navigation/Navigation";
 Modal.setAppElement("#root");
 
 export interface Props {}
@@ -24,7 +24,7 @@ const Home: React.FC<Props> = () => {
       <div>
         <img
           src={BackGroundFirst}
-          alt="Image not found"
+          alt="Not found"
           className="Backgroundfirstimage"
         />
         <div className="container">
@@ -32,7 +32,7 @@ const Home: React.FC<Props> = () => {
             <p className="container__text">ation.</p>
             <img
               src={Line}
-              alt="Image not found"
+              alt="Not found"
               className="container__line-image"
             />
           <div className="container__bottom">
@@ -41,7 +41,7 @@ const Home: React.FC<Props> = () => {
               Create value by applying novel solutions to meaningful problems
             </p>
           </div>
-          <img src={Mouse} alt="Image not found" className="container__mouse" />
+          <img src={Mouse} alt="Not found" className="container__mouse" />
         </div>
       </div>
       <div className="secondbackground">

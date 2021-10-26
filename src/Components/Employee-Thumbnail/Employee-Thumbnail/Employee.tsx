@@ -12,7 +12,7 @@ const Employee: React.FC<Props> = ({ image, name, position }) => {
     <div className="employee">
       <img src={image} alt={name} className="employee__image" />
       <p className="employee__name">{name}</p>
-      <a className="employee__position">{position}</a>
+      <p className="employee__position">{position}</p>
     </div>
   );
 };
