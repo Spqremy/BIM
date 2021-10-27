@@ -1,6 +1,7 @@
 import "./Testimonials.css";
 import StoreTestimonial from "../../../Store/StoreTestimonail"
 import Testimonial from "../Testimonial/Testimonial";
+import { v4 as uuidv4 } from 'uuid';
 
 export interface Props {}
 
@@ -9,7 +10,7 @@ export interface Props {}
 const Testimonials = () => {
   return (
     <div className="testimonialss">
-      {testimonials.map(testimonial=>(<Testimonial {...testimonial}/>))}
+      {testimonials.map(testimonial=>(<Testimonial key={uuidv4()} {...testimonial}/>))}
     </div>
   );
 };

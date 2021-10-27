@@ -1,5 +1,5 @@
 import React from "react";
-import Description from "../../Components/Description/Description";
+import Descriptions from "../../Components/Description/Descriptions/Descriptions";
 import Employees from "../../Components/Employee-Thumbnail/Employees/Employees";
 import PageHero from "../../Components/HeroPage/HeroPage/PageHero";
 import StudentCard from "../../Components/StudentCard/StudentCard";
@@ -21,7 +21,7 @@ const Bim: React.FC<Props> = () => {
         entries="Entries"
 
       />
-      <Description />
+      <Descriptions />
       <div className="cards">
         <StudentCard
           className="cards__card"
