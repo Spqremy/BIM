@@ -6,7 +6,7 @@ import Testimonials from "../../Components/Testimonial/Testimonials/Testimonials
 import Section from "../../Components/Section/Section";
 import Mouse from "../../assets/Images/Mouse.png";
 import Line from "../../assets/Images/Line.png";
-import VideoSection from "../../Components/Video/VideoSection/VideoSection"
+import VideoSection from "../../Components/Video/VideoSection/VideoSection";
 import Modal from "react-modal";
 import PrizesImage from "../../assets/Images/Prize.png";
 import Footer from "../../Footer/Footer";
@@ -14,10 +14,10 @@ import BackGroundFirst from "../../assets/Images/BackgroundFirst.png";
 import Prizes from "../../Components/Prize/Prizes/Prizes";
 import { Navigation } from "../../Navigation-component/Navigation/Navigation";
 Modal.setAppElement("#root");
-
 export interface Props {}
 
 const Home: React.FC<Props> = () => {
+
   return (
     <div>
       <Navigation />
@@ -29,12 +29,8 @@ const Home: React.FC<Props> = () => {
         />
         <div className="container">
           <p className="container__text">Inn v</p>
-            <p className="container__text">ation.</p>
-            <img
-              src={Line}
-              alt="Not found"
-              className="container__line-image"
-            />
+          <p className="container__text">ation.</p>
+          <img src={Line} alt="Not found" className="container__line-image" />
           <div className="container__bottom">
             <div className="container__button"></div>
             <p className="container__description">
@@ -79,11 +75,10 @@ const Home: React.FC<Props> = () => {
             description="These are things that participants who have used our features and works says."
             position={true}
           />
-
           <Prizes />
         </div>
       </div>
-      <VideoSection/>
+      <VideoSection />
       <Footer />
     </div>
   );
